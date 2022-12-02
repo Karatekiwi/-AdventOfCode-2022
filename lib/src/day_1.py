@@ -26,16 +26,10 @@ print("1. Find the Elf carrying the most Calories. How many total Calories is th
 print(np.max(allRations))
 print()
 
-max1 = np.max(allRations)
-allRations.remove(max1)
+allRations.sort(reverse=True)
 
-max2 = np.max(allRations)
-allRations.remove(max2)
-
-max3 = np.max(allRations)
-
-print()
+#print()
 
 print("2. Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total?")
-print(max1 + max2 + max3)
+print(allRations[0] + allRations[1] + allRations[2])
 print()
